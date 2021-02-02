@@ -16,7 +16,7 @@ const YandexMapBus = new Vue({
       if (this.scriptAttached) {
         return
       }
-      let src = '//api-maps.yandex.ru/' + Vue.yandexMapOptions.version + '/?lang=' + Vue.yandexMapOptions.lang
+      let src = 'https://api-maps.yandex.ru/' + Vue.yandexMapOptions.version + '/?lang=' + Vue.yandexMapOptions.lang
       if (Vue.yandexMapOptions.apiKey.length) {
         src += '&apikey=' + Vue.yandexMapOptions.apiKey
       }
